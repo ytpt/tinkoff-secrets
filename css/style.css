@@ -1,0 +1,400 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.container {
+    max-width: 784px;
+}
+
+.article {
+    padding: 48px 0 50px 48px;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong.bold {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/*Optimase styles*/
+.article-header__text,
+.meta__tags,
+.meta,
+.article-author,
+.heading-link,
+.article-author__img-wrapper,
+.footer {
+    display: flex;
+}
+
+.article-header__text,
+.meta {
+    flex-direction: column;
+}
+
+.meta__tags,
+.article-author,
+.heading-link,
+.footer {
+    flex-direction: row;
+}
+
+.article-author__name,
+.article-header__label,
+.article-author__name {
+    font-weight: 700;
+}
+
+.article-header__img,
+.meta__tag,
+.article-author__img-wrapper {
+    background-color: rgba(241, 243, 245, 1);
+}
+
+.meta__title,
+.meta__tag,
+.article-author__position,
+.footer__title {
+    color: rgba(128, 140, 158, 1);
+}
+
+.meta__tag:hover,
+.heading-link__link:hover,
+.footer__link:hover {
+    transition: ease 0.5s;
+}
+
+.heading,
+.heading-link__link,
+.heading-link__title {
+    font-size: 28px;
+}
+
+.paragraph,
+.list > li {
+    margin-top: 16px;
+}
+
+.article-author__name,
+.footer__title,
+.footer__link {
+    font-size: 15px;
+}
+
+.article-header__label
+.article-author__name,
+.article-author__position,
+.footer__title,
+.footer__link {
+    line-height: 20px;  
+}
+
+.heading,
+.heading-link__title,
+.heading-link__link {
+    line-height: 32px;
+}
+
+/*Header*/
+.article-header {
+    display: grid;
+    grid-template-columns: auto 80px;
+    margin: 0 0 40px 48px;
+}
+
+.article-header__text {
+    row-gap: 12px;
+}
+
+.article-header__label {
+    align-self: flex-start;
+    background-color: rgba(255, 221, 45, 1);
+    font-size: 13px;
+    padding: 2px 10px 4px 10px;
+}
+
+.article-header__title {
+    font-size: 36px;
+    line-height: 44px;
+    color: rgba(17, 17, 17, 1);
+}
+
+.article-header__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+}
+
+.meta {
+    row-gap: 8px;
+    margin-left: 48px;
+}
+
+.meta__title {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.meta__tags {
+    column-gap: 12px;
+    flex-wrap: wrap;
+}
+
+.meta__tag:hover {
+    color: rgba(51, 51, 51, 1);
+}
+
+/*Main*/
+.article-body {
+    margin: 0 0 0 48px;
+}
+
+.article-body__tinkoff-kassa {
+    margin: 76px 25px 0 48px;
+}
+
+.article-author {
+    position: relative;
+    max-width: 288px;
+    column-gap: 16px;
+    margin-top: 28px;
+}
+
+.heading {
+    margin-top: 48px;
+}
+
+.article-body > blockquote {
+    width: max-content;
+}
+
+.heading-link {
+    align-items: center;
+    column-gap: 8px;
+}
+
+.heading-link__link {
+    color: rgba(89, 125, 179, 1);
+    border-bottom: 1px solid rgba(89, 125, 179, 0.2);
+}
+
+.heading-link__link:hover {
+    color: rgba(82, 131, 204, 1);
+    border-bottom: 1px solid rgba(82, 131, 204, 1);
+}
+
+.article-author__img-wrapper {
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+}
+
+.article-author__position {
+    font-size: 14px;
+}
+
+.article-author__link {
+    background: transparent!important;
+    display: block;
+    font-size: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*Footer*/
+.footer {
+    justify-content: space-between;
+    margin: 50px 45px 0 47px;
+}
+
+.footer__link {
+    color:rgba(89, 125, 179, 1);
+    border-bottom: 1px solid rgba(89, 125, 179, 0.2);
+}
+
+.footer__link:hover {
+    color: rgba(82, 131, 204, 1);
+    border-bottom: 1px solid rgba(82, 131, 204, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .container {
+        max-width: 608px;
+    }
+
+    .article {
+        padding: 48px;
+    }
+
+    /*Optimase styles*/
+    strong.bold,
+    .meta__tag,
+    .meta__title,
+    .paragraph  {
+        font-size: 15px;
+    }
+
+    .meta__tag,
+    .meta__title {
+        line-height: 24px;
+    }
+
+    .article-header__title,
+    .heading {
+        line-height: 28px;
+    }
+
+    /*Header*/
+    .article-header {
+        margin: 0;
+    }
+
+    .article-header__title {
+        font-size: 24px;
+    }
+
+    .meta {
+        margin: 28px 0 0 0;
+    }
+
+    .meta__tags {
+        row-gap: 12px;
+    }
+
+    .wrap > .article-author {
+        margin-top: 30px;
+    }
+
+    /*Main*/
+    .article-body,
+    .article-body__tinkoff-kassa {
+        margin: 0;
+    }
+
+    .heading {
+        font-size: 21px;
+    }
+
+    .paragraph {
+        line-height: 24px;
+        margin-top: 12px;
+    }
+
+    .article-body__tinkoff-kassa {
+        margin: 48px 0 0 0;
+    }
+
+    .heading-link {
+        flex-wrap: wrap;
+    }
+
+    .heading-link__title,
+    .heading-link__link {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .article-body > blockquote {
+        width: auto;
+    }
+
+    /*Footer*/
+    .footer {
+        margin: 48px 3px 0 1px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        max-width: 288px;
+    }
+
+    .article {
+        padding: 24px 24px 36px 24px;
+    }
+
+    /*Optimase styles*/
+    .article-header,
+    .meta__tags,
+    .footer {
+        flex-direction: column;
+    }
+
+    .meta__tag,
+    .footer__link {
+        width: fit-content;
+    }
+
+    /*Header*/
+    .article-header,
+    .meta {
+        margin: 0;
+    }
+
+    .article-header__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .article-header {
+        display: flex;
+        row-gap: 12px;
+    }
+
+    .article-header__img {
+        margin: 12px 0;
+    }
+
+    /*Main*/
+    .article-body {
+        margin: 0;
+    }
+
+    .heading {
+        margin-top: 40px;
+    }
+
+    .paragraph {
+        margin-top: 16px;
+    }
+
+    .article-body__tinkoff-kassa {
+        margin: 12px 0 0 0;
+    }
+
+    .heading-link {
+        margin-top: 12px;
+    }
+
+    .article-body > blockquote {
+        margin: 36px 0 4px 0;
+    }
+
+    blockquote.heading ~ .paragraph {
+        margin-top: 0;
+    }
+
+    /*Footer*/
+    .footer {
+        row-gap: 8px;
+        margin: 36px 7px 0 0;
+    }
+}
